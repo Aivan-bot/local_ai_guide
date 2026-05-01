@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-100 bg-[rgba(10,22,40,0.95)] backdrop-blur-[20px] border-b border-[rgba(78,205,196,0.1)] h-16 flex items-center justify-between px-4 lg:px-[max(40px,(100vw-1200px)/2)]">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[rgba(10,22,40,0.95)] backdrop-blur-[20px] border-b border-[rgba(78,205,196,0.1)] h-16 flex items-center justify-between px-4 lg:px-[max(40px,(100vw-1200px)/2)]">
       <Link href="/" className="flex items-center gap-3 no-underline">
         <span className="font-montserrat text-[13px] font-semibold text-accent-teal tracking-[2px] uppercase">
           XALT AI
