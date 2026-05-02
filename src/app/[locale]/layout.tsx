@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { montserrat, roboto } from "../fonts";
 import "../globals.css";
-import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
 
 export async function generateStaticParams() {
   return [{ locale: "en" }, { locale: "de" }];
@@ -26,14 +24,11 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const messages = await getMessages({ locale });
 
   return (
     <html lang={locale} className={`${montserrat.variable} ${roboto.variable}`}>
       <body className={`${montserrat.variable} ${roboto.variable} antialiased`}>
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+        {children}
       </body>
     </html>
   );

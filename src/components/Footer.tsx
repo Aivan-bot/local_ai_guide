@@ -1,10 +1,10 @@
-"use client";
+// Link replaced with <a> for static export compatibility
 
-import { Link } from "@/lib/navigation";
-import { useLocale } from "next-intl";
+interface FooterProps {
+  locale: "en" | "de";
+}
 
-export default function Footer() {
-  const locale = useLocale();
+export default function Footer({ locale }: FooterProps) {
   const isEn = locale === "en";
 
   return (
@@ -13,18 +13,18 @@ export default function Footer() {
         <p className="text-[12px] text-[rgba(255,255,255,0.3)]">© 2026 XALT Business Consulting GmbH</p>
         
         <div className="flex flex-wrap justify-center gap-6">
-          <Link href={isEn ? "/services" : "/de/services"} className="text-[rgba(255,255,255,0.7)] no-underline text-[13px] font-medium hover:text-accent-teal transition-colors">
+          <a href={isEn ? "/services" : "/de/services"} className="text-[rgba(255,255,255,0.7)] no-underline text-[13px] font-medium hover:text-accent-teal transition-colors">
             Atlassian Services
-          </Link>
+          </a>
           <a href="https://linkedin.com/company/xalt" target="_blank" rel="noopener noreferrer" className="text-[rgba(255,255,255,0.7)] no-underline text-[13px] font-medium hover:text-accent-teal transition-colors">
             LinkedIn
           </a>
-          <Link href={isEn ? "/contact" : "/de/contact"} className="text-[rgba(255,255,255,0.7)] no-underline text-[13px] font-medium hover:text-accent-teal transition-colors">
+          <a href={isEn ? "/contact" : "/de/contact"} className="text-[rgba(255,255,255,0.7)] no-underline text-[13px] font-medium hover:text-accent-teal transition-colors">
             {isEn ? "Contact" : "Kontakt"}
-          </Link>
-          <Link href={isEn ? "/impressum" : "/de/impressum"} className="text-[rgba(255,255,255,0.7)] no-underline text-[13px] font-medium hover:text-accent-teal transition-colors">
+          </a>
+          <a href={isEn ? "/impressum" : "/de/impressum"} className="text-[rgba(255,255,255,0.7)] no-underline text-[13px] font-medium hover:text-accent-teal transition-colors">
             Impressum
-          </Link>
+          </a>
         </div>
       </div>
       

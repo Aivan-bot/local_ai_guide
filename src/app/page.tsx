@@ -1,13 +1,14 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import HomePage from "../components/Hero";
+// Link replaced with <a> for static export compatibility
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import HomePage from "@/components/Hero";
 
 export default function Page() {
   return (
     <div className="min-h-screen bg-primary-dark text-white">
-      <Navbar />
+      <Navbar locale="en" />
       <HomePage />
-      <Footer />
+      <Footer locale="en" />
     </div>
   );
 }

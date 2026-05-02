@@ -1,7 +1,7 @@
+// Link replaced with <a> for static export compatibility
+import enDict from "@/i18n/dictionaries/en.json";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Link } from "@/lib/navigation";
-import { useTranslations } from "next-intl";
 
 const jobs = [
   {
@@ -48,22 +48,26 @@ const jobs = [
   }
 ];
 
+export async function generateStaticParams() {
+  return [{ locale: "en" }, { locale: "de" }];
+}
+
 export default function JobsPage() {
-  const t = useTranslations();
+  const lang: "en" | "de" = "en";
 
   return (
     <div className="min-h-screen bg-primary-dark text-white">
-      <Navbar />
+      <Navbar locale={lang} />
       <main className="pt-24 px-4 lg:px-[max(60px,(100vw-1200px)/2)] pb-20">
         <div className="max-w-4xl mx-auto mb-16">
           <span className="inline-block text-[11px] tracking-[3px] uppercase text-accent-teal font-semibold mb-5">
-            {t("careers.tagline")}
+            {enDict.careers.tagline}
           </span>
           <h1 className="font-montserrat text-[48px] font-bold text-white leading-[1.2] mb-6">
-            {t("careers.title")}
+            {enDict.careers.title}
           </h1>
           <p className="text-[18px] text-[rgba(255,255,255,0.6)] leading-[1.6] max-w-3xl">
-            {t("careers.subtitle")}
+            {enDict.careers.subtitle}
           </p>
         </div>
         <div className="max-w-4xl mx-auto space-y-6">
@@ -82,12 +86,12 @@ export default function JobsPage() {
           ))}
         </div>
         <div className="text-center mt-16 max-w-3xl mx-auto">
-          <Link href="/contact" className="bg-accent-teal text-primary-dark px-8 py-3 rounded-lg font-bold text-[14px] tracking-[0.5px] hover:translate-y-[-1px] hover:shadow-[0_4px_15px_rgba(78,205,196,0.3)] transition-all inline-block">
-            {t("nav.contact")}
-          </Link>
+          <a href="/contact" className="bg-accent-teal text-primary-dark px-8 py-3 rounded-lg font-bold text-[14px] tracking-[0.5px] hover:translate-y-[-1px] hover:shadow-[0_4px_15px_rgba(78,205,196,0.3)] transition-all inline-block">
+            {enDict.nav.contact}
+          </a>
         </div>
       </main>
-      <Footer />
+      <Footer locale={lang} />
     </div>
   );
 }

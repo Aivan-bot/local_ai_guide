@@ -20,9 +20,9 @@ export default async function Page({ params }: PageProps) {
 
   return (
     <div className="min-h-screen bg-primary-dark text-white">
-      <Navbar />
+      <Navbar locale={locale as "en" | "de"} />
       <HomePage />
-      <Footer />
+      <Footer locale={locale as "en" | "de"} />
     </div>
   );
 }

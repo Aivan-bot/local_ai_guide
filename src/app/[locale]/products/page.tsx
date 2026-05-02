@@ -1,10 +1,11 @@
-"use client";
-
+// Link replaced with <a> for static export compatibility
+import enDict from "@/i18n/dictionaries/en.json";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Link } from "@/lib/navigation";
-import { useTranslations } from "next-intl";
-import { useRouter } from "@/lib/navigation";
+
+export async function generateStaticParams() {
+  return [{ locale: "en" }, { locale: "de" }];
+}
 
 const products = [
   {
@@ -37,30 +38,28 @@ const ventures = [
 ];
 
 export default function ProductsPage() {
-  const t = useTranslations();
-  const router = useRouter();
-  const locale = "en";
 
+  const lang: "en" | "de" = "en";
   return (
     <div className="min-h-screen bg-primary-dark text-white">
-      <Navbar />
+      <Navbar locale={lang} />
       <main className="pt-24 px-4 lg:px-[max(60px,(100vw-1200px)/2)] pb-20">
         <div className="max-w-4xl mx-auto mb-16">
           <span className="inline-block text-[11px] tracking-[3px] uppercase text-accent-teal font-semibold mb-5">
-            {t("products.tagline")}
+            {enDict.products.tagline}
           </span>
           <h1 className="font-montserrat text-[48px] font-bold text-white leading-[1.2] mb-6">
-            {t("products.title")}
+            {enDict.products.title}
           </h1>
           <p className="text-[18px] text-[rgba(255,255,255,0.6)] leading-[1.6] max-w-3xl">
-            {t("products.subtitle")}
+            {enDict.products.subtitle}
           </p>
         </div>
         <div className="mb-20">
-          <h2 className="font-montserrat text-[32px] font-bold text-white mb-10">{t("products.apps")}</h2>
+          <h2 className="font-montserrat text-[32px] font-bold text-white mb-10">{enDict.products.apps}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-7 max-w-5xl mx-auto">
             {products.map((product, index) => (
-              <Link key={index} href={product.href} className="glass rounded-2xl p-8 hover:bg-[rgba(78,205,196,0.05)] hover:border-[rgba(78,205,196,0.3)] hover:translate-y-[-4px] transition-all no-underline block">
+              <a key={index} href={product.href} className="glass rounded-2xl p-8 hover:bg-[rgba(78,205,196,0.05)] hover:border-[rgba(78,205,196,0.3)] hover:translate-y-[-4px] transition-all no-underline block">
                 <h3 className="font-montserrat text-[24px] font-bold text-white mb-3">{product.title}</h3>
                 <p className="text-[rgba(255,255,255,0.6)] leading-6 mb-4">{product.description}</p>
                 <div className="flex flex-wrap gap-3">
@@ -68,15 +67,15 @@ export default function ProductsPage() {
                     <span key={i} className="text-[12px] text-[rgba(255,255,255,0.35)] flex items-center gap-1">{tag}</span>
                   ))}
                 </div>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
         <div>
-          <h2 className="font-montserrat text-[32px] font-bold text-white mb-10">{t("products.ventures")}</h2>
+          <h2 className="font-montserrat text-[32px] font-bold text-white mb-10">{enDict.products.ventures}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-7 max-w-5xl mx-auto">
             {ventures.map((venture, index) => (
-              <Link key={index} href={venture.href} className="glass rounded-2xl p-8 hover:bg-[rgba(78,205,196,0.05)] hover:border-[rgba(78,205,196,0.3)] hover:translate-y-[-4px] transition-all no-underline block">
+              <a key={index} href={venture.href} className="glass rounded-2xl p-8 hover:bg-[rgba(78,205,196,0.05)] hover:border-[rgba(78,205,196,0.3)] hover:translate-y-[-4px] transition-all no-underline block">
                 <h3 className="font-montserrat text-[24px] font-bold text-white mb-3">{venture.title}</h3>
                 <p className="text-[rgba(255,255,255,0.6)] leading-6 mb-4">{venture.description}</p>
                 <div className="flex flex-wrap gap-3">
@@ -84,12 +83,12 @@ export default function ProductsPage() {
                     <span key={i} className="text-[12px] text-[rgba(255,255,255,0.35)] flex items-center gap-1">{tag}</span>
                   ))}
                 </div>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
       </main>
-      <Footer />
+      <Footer locale={lang} />
     </div>
   );
 }

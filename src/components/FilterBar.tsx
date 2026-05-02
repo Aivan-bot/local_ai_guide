@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { useTranslations } from "next-intl";
+// Link replaced with <a> for static export compatibility
+import enDict from "@/i18n/dictionaries/en.json";
 
 interface Category {
   name: string;
@@ -13,7 +13,6 @@ interface FilterBarProps {
 }
 
 export default function FilterBar({ categories, activeFilter, onFilterChange }: FilterBarProps) {
-  const t = useTranslations("filters");
 
   return (
     <div className="flex flex-wrap gap-4 items-center">
