@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "logo": "XALT AI",
+    "vibeWorkshop": "Vibe Coding Workshop",
+    "cLevelWorkshop": "C-Level Workshop",
+    "xalt": "xalt.de",
+    "contact": "GET IN TOUCH",
+    "english": "🇬🇧 EN",
+    "german": "🇩🇪 DE"
+  },
+  "footer": {
+    "atlassian": "Atlassian Services",
+    "linkedin": "LinkedIn",
+    "contact": "Contact",
+    "impressum": "Impressum"
+  },
+  "home": {
+    "tagline": "XALT AI-Powered Services",
+    "titlePart1": "Build Faster.",
+    "titlePart2": "Lead Smarter.",
+    "subtitle": "Explore XALT's AI-powered workshops and services. From hands-on Vibe Coding for engineers to strategic C-Level briefings — we help your organization adopt AI with confidence.",
+    "cta": "GET IN TOUCH"
+  },
+  "contact": {
+    "tagline": "Contact",
+    "title": "Get in Touch",
+    "subtitle": "Have a question about our services, workshops, or want to discuss a project? We'd love to hear from you.",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com",
+    "subject": "Subject",
+    "subjectPlaceholder": "What is this about?",
+    "message": "Message",
+    "messagePlaceholder": "Tell us about your project or question...",
+    "send": "Send Message"
+  },
+  "events": {
+    "tagline": "Events",
+    "title": "Upcoming Events",
+    "subtitle": "Join us at our events to connect with industry experts, learn about the latest in AI and cloud technology, and network with fellow professionals."
+  },
+  "careers": {
+    "tagline": "Careers",
+    "title": "Join Our Team",
+    "subtitle": "Help us build the future of AI-powered work tools. We're looking for passionate people who want to make a real impact."
+  },
+  "products": {
+    "tagline": "Products \u0026 Ventures",
+    "title": "Our Products",
+    "subtitle": "Atlassian apps that solve real problems, plus venture studio opportunities for innovative teams.",
+    "apps": "Applications",
+    "ventures": "Venture Studio"
+  },
+  "services": {
+    "tagline": "Services",
+    "title": "Our Services",
+    "subtitle": "From strategic AI consulting to emergency IT rescue — we offer comprehensive services to help your organization succeed."
+  },
+  "vibeCoding": {
+    "tagline": "Workshop",
+    "title": "Vibe Coding Workshop",
+    "subtitle": "Hands-on AI-powered development workshop for engineers and technical leaders. Learn to build software faster with AI coding assistants, master prompt engineering, and modernize your delivery pipeline.",
+    "duration": "4 Hours",
+    "format": "Online",
+    "max": "Max 12",
+    "cta": "Book Your Workshop",
+    "learnTitle": "What You'll Learn",
+    "learn1": "AI coding assistants and prompt engineering",
+    "learn2": "Building full-stack applications with AI",
+    "learn3": "Modern development workflows and CI/CD",
+    "learn4": "Team productivity with AI tools",
+    "audienceTitle": "Target Audience",
+    "audience": "Engineers, technical leads, and anyone interested in AI-assisted development. No prior AI experience required — just bring your curiosity and laptop."
+  },
+  "cLevel": {
+    "tagline": "C-Level Workshop",
+    "title": "Vibe Coding — C-Level Edition",
+    "subtitle": "Strategic AI leadership briefing for CTOs, CIOs, and board members. Understand how AI is reshaping software economics, evaluate organizational readiness, and build your AI adoption roadmap.",
+    "cta": "Schedule Briefing",
+    "topicsTitle": "Strategic Topics",
+    "topic1": "AI economics: cost reduction and value creation",
+    "topic2": "Organizational readiness assessment",
+    "topic3": "AI adoption roadmap and implementation strategy",
+    "topic4": "Risk management and governance",
+    "formatTitle": "Format",
+    "format": "Half-day executive briefing, tailored to your organization's specific challenges and goals. Interactive format with Q\u0026A and strategic planning exercises."
+  },
+  "locales": {
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "filters": {
+    "all": "All",
+    "workshops": "Workshops",
+    "forgeApps": "Forge Apps",
+    "events": "Events",
+    "venture": "Venture",
+    "jobs": "Jobs",
+    "caseStudies": "Case Studies",
+    "products": "Products",
+    "branding": "Branding",
+    "blog": "Blog"
+  },
+  "card": {
+    "viewJob": "View Job Posting →",
+    "learnMore": "Learn More →",
+    "explore": "Explore →"
+  },
+  "impressum": "Impressum",
+  "copyright": "© 2026 XALT Business Consulting GmbH"
+}

@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "logo": "XALT KI",
+    "vibeWorkshop": "Vibe Coding Workshop",
+    "cLevelWorkshop": "C-Level Workshop",
+    "xalt": "xalt.de",
+    "contact": "KONTAKT",
+    "english": "🇬🇧 EN",
+    "german": "🇩🇪 DE"
+  },
+  "footer": {
+    "atlassian": "Atlassian Services",
+    "linkedin": "LinkedIn",
+    "contact": "Kontakt",
+    "impressum": "Impressum"
+  },
+  "home": {
+    "tagline": "XALT KI-Gestützte Services",
+    "titlePart1": "Schneller Bauen.",
+    "titlePart2": "Cleverer Führen.",
+    "subtitle": "Entdecken Sie XALT's KI-gestützte Workshops und Services. Vom praktischen Vibe Coding für Entwickler bis zur strategischen C-Level-Beratung — wir helfen Ihrer Organisation, KI mit Vertrauen einzuführen.",
+    "cta": "KONTAKT"
+  },
+  "contact": {
+    "tagline": "Kontakt",
+    "title": "Kontakt aufnehmen",
+    "subtitle": "Haben Sie eine Frage zu unseren Services, Workshops oder möchten Sie ein Projekt besprechen? Wir freuen uns von Ihnen zu hören.",
+    "name": "Name",
+    "namePlaceholder": "Ihr Name",
+    "email": "E-Mail",
+    "emailPlaceholder": "ihre@email.de",
+    "subject": "Betreff",
+    "subjectPlaceholder": "Worum geht es?",
+    "message": "Nachricht",
+    "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt oder Ihrer Frage...",
+    "send": "Nachricht Senden"
+  },
+  "events": {
+    "tagline": "Events",
+    "title": "Kommende Events",
+    "subtitle": "Besuchen Sie uns auf unseren Events, um mit Branchenexperten in Kontakt zu treten, sich über die neuesten Entwicklungen in KI und Cloud-Technologie zu informieren und mit Gleichgesinnten zu netzwerken."
+  },
+  "careers": {
+    "tagline": "Karriere",
+    "title": "Werde Teil unseres Teams",
+    "subtitle": "Hilf uns, die Zukunft KI-gestützter Arbeitstools zu gestalten. Wir suchen leidenschaftliche Menschen, die etwas bewegen wollen."
+  },
+  "products": {
+    "tagline": "Produkte \u0026 Ventures",
+    "title": "Unsere Produkte",
+    "subtitle": "Atlassian-Apps, die echte Probleme lösen, plus Venture-Studio-Möglichkeiten für innovative Teams.",
+    "apps": "Anwendungen",
+    "ventures": "Venture Studio"
+  },
+  "services": {
+    "tagline": "Angebote",
+    "title": "Unsere Services",
+    "subtitle": "Von strategischer KI-Beratung bis zum IT-Notfall-Service — wir bieten umfassende Leistungen, um Ihrer Organisation zum Erfolg zu verhelfen."
+  },
+  "vibeCoding": {
+    "tagline": "Workshop",
+    "title": "Vibe Coding Workshop",
+    "subtitle": "Praktischer KI-gestützter Entwicklungs-Workshop für Entwickler und technische Führungskräfte. Lerne, wie du mit KI-Coding-Assistenten schneller Software entwickelst, Prompt Engineering meistern und deine Delivery-Pipeline modernisieren.",
+    "duration": "4 Stunden",
+    "format": "Online",
+    "max": "Max 12",
+    "cta": "Workshop Buchen",
+    "learnTitle": "Was Du Lernst",
+    "learn1": "KI-Coding-Assistenten und Prompt Engineering",
+    "learn2": "Full-Stack-Anwendungen mit KI entwickeln",
+    "learn3": "Moderne Entwicklungs-Workflows und CI/CD",
+    "learn4": "Team-Produktivität mit KI-Tools",
+    "audienceTitle": "Zielgruppe",
+    "audience": "Entwickler, technische Leads und alle, die sich für KI-unterstützte Entwicklung interessieren. Keine Vorkenntnisse in KI erforderlich — bring einfach deine Neugier und deinen Laptop mit."
+  },
+  "cLevel": {
+    "tagline": "C-Level Workshop",
+    "title": "Vibe Coding — C-Level Edition",
+    "subtitle": "Strategischer KI-Führungskurzbericht für CTOs, CIOs und Vorstandsmitglieder. Verstehen, wie KI die Software-Wirtschaft verändert, organisationale Reife bewerten und eine KI-Einführungsroadmap erstellen.",
+    "cta": "Kurzbericht Planen",
+    "topicsTitle": "Strategische Themen",
+    "topic1": "KI-Wirtschaft: Kostensenkung und Wert-creation",
+    "topic2": "Bewertung der Organisationsreife",
+    "topic3": "KI-Einführungsroadmap und Implementierungsstrategie",
+    "topic4": "Risikomanagement und Governance",
+    "formatTitle": "Format",
+    "format": "Halbtägiger Führungskurzbericht, maßgeschneidert auf die spezifischen Herausforderungen und Ziele Ihres Unternehmens. Interaktives Format mit Fragen und Antworten sowie strategischen Planungsübungen."
+  },
+  "locales": {
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "filters": {
+    "all": "Alle",
+    "workshops": "Workshops",
+    "forgeApps": "Forge Apps",
+    "events": "Events",
+    "venture": "Venture",
+    "jobs": "Jobs",
+    "caseStudies": "Fallstudien",
+    "products": "Produkte",
+    "branding": "Branding",
+    "blog": "Blog"
+  },
+  "card": {
+    "viewJob": "Stelle Anzeigen →",
+    "learnMore": "Mehr Erfahren →",
+    "explore": "Entdecken →"
+  },
+  "impressum": "Impressum",
+  "copyright": "© 2026 XALT Business Consulting GmbH"
+}

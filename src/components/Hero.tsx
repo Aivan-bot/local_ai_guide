@@ -1,12 +1,14 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
 import CardComponent from "./Card";
 import FilterBar from "./FilterBar";
 import { allCards, getFilteredCards, filterCategories } from "../lib/data";
 import { useState, useMemo } from "react";
+import { useTranslations } from "next-intl";
 
 export default function HomePage() {
+  const t = useTranslations();
   const [activeFilter, setActiveFilter] = useState("all");
   
   const filteredCards = useMemo(() => {
@@ -22,22 +24,22 @@ export default function HomePage() {
         
         <div className="relative z-10 max-w-[750px]">
           <span className="inline-block text-[11px] tracking-[3px] uppercase text-accent-teal font-semibold mb-5">
-            XALT AI-Powered Services
+            {t("home.tagline")}
           </span>
           
           <h1 className="font-montserrat text-[48px] md:text-[52px] font-bold text-white leading-[1.15] mb-5 tracking-[-1px]">
-            Build Faster. <br className="hidden md:block" />
+            {t("home.titlePart1")} <br className="hidden md:block" />
             <span className="bg-gradient-to-r from-accent-teal to-[#7ee8e0] bg-clip-text text-transparent">
-              Lead Smarter.
+              {t("home.titlePart2")}
             </span>
           </h1>
           
           <p className="text-[18px] text-[rgba(255,255,255,0.5)] max-w-[580px] mx-auto mb-10 leading-[1.5]">
-            Explore XALT's AI-powered workshops and services. From hands-on Vibe Coding for engineers to strategic C-Level briefings — we help your organization adopt AI with confidence.
+            {t("home.subtitle")}
           </p>
           
-          <Link href="/contact" className="bg-accent-teal text-primary-dark px-8 py-3 rounded-lg font-bold text-[14px] tracking-[0.5px] hover:translate-y-[-1px] hover:shadow-[0_4px_15px_rgba(78,205,196,0.3)] transition-all inline-block">
-            GET IN TOUCH
+          <Link href="/en/contact" className="bg-accent-teal text-primary-dark px-8 py-3 rounded-lg font-bold text-[14px] tracking-[0.5px] hover:translate-y-[-1px] hover:shadow-[0_4px_15px_rgba(78,205,196,0.3)] transition-all inline-block">
+            {t("home.cta")}
           </Link>
         </div>
       </section>

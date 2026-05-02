@@ -1,11 +1,14 @@
 import type { NextConfig } from "next";
+import createNextIntlPlugin from "next-intl/plugin";
 
-const nextConfig: NextConfig = {
+const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
+
+const nextConfig: NextConfig = withNextIntl({
   output: 'export',
   basePath: process.env.PAGES_BASE_PATH || '',
   images: {
     unoptimized: true,
   },
-};
+});
 
 export default nextConfig;
