@@ -69,7 +69,7 @@ export default function ServicesPage() {
           ))}
         </div>
         <div className="text-center mt-16 max-w-3xl mx-auto">
-          <Link href="/contact`} className="bg-accent-teal text-primary-dark px-8 py-3 rounded-lg font-bold text-[14px] tracking-[0.5px] hover:translate-y-[-1px] hover:shadow-[0_4px_15px_rgba(78,205,196,0.3)] transition-all inline-block">
+          <Link href="/contact" className="bg-accent-teal text-primary-dark px-8 py-3 rounded-lg font-bold text-[14px] tracking-[0.5px] hover:translate-y-[-1px] hover:shadow-[0_4px_15px_rgba(78,205,196,0.3)] transition-all inline-block">
             {t("nav.contact")}
           </Link>
         </div>

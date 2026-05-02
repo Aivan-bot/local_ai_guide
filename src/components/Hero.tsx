@@ -5,10 +5,11 @@ import CardComponent from "./Card";
 import FilterBar from "./FilterBar";
 import { allCards, getFilteredCards, filterCategories } from "../lib/data";
 import { useState, useMemo } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function HomePage() {
   const t = useTranslations();
+  const locale = useLocale();
   const [activeFilter, setActiveFilter] = useState("all");
   
   const filteredCards = useMemo(() => {
@@ -38,7 +39,7 @@ export default function HomePage() {
             {t("home.subtitle")}
           </p>
           
-          <Link href="/en/contact" className="bg-accent-teal text-primary-dark px-8 py-3 rounded-lg font-bold text-[14px] tracking-[0.5px] hover:translate-y-[-1px] hover:shadow-[0_4px_15px_rgba(78,205,196,0.3)] transition-all inline-block">
+          <Link href={`/contact`} className="bg-accent-teal text-primary-dark px-8 py-3 rounded-lg font-bold text-[14px] tracking-[0.5px] hover:translate-y-[-1px] hover:shadow-[0_4px_15px_rgba(78,205,196,0.3)] transition-all inline-block">
             {t("home.cta")}
           </Link>
         </div>
