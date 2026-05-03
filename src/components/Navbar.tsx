@@ -1,4 +1,6 @@
-// Link replaced with <a> for static export compatibility
+'use client';
+
+import { useState } from 'react';
 
 interface NavbarProps {
   locale: "en" | "de";
@@ -6,10 +8,14 @@ interface NavbarProps {
 
 export default function Navbar({ locale }: NavbarProps) {
   const isEn = locale === "en";
+  const [menuOpen, setMenuOpen] = useState(false);
   
   const links = [
-    { href: isEn ? "/workshops/vibe-coding" : "/de/workshops/vibe-coding", label: "Vibe Coding Workshop" },
-    { href: isEn ? "/workshops/c-level" : "/de/workshops/c-level", label: "C-Level Workshop" },
+    { href: isEn ? "/workshops/vibe-coding" : "/de/workshops/vibe-coding", label: isEn ? "Vibe Coding Workshop" : "Vibe Coding Workshop" },
+    { href: isEn ? "/workshops/c-level" : "/de/workshops/c-level", label: isEn ? "C-Level Workshop" : "C-Level Workshop" },
+    { href: isEn ? "/products" : "/de/products", label: isEn ? "Products" : "Produkte" },
+    { href: isEn ? "/events" : "/de/events", label: isEn ? "Events" : "Events" },
+    { href: isEn ? "/jobs" : "/de/jobs", label: isEn ? "Jobs" : "Jobs" },
     { href: "https://xalt.de", label: "xalt.de", external: true },
   ];
   
@@ -21,6 +27,7 @@ export default function Navbar({ locale }: NavbarProps) {
         </span>
       </a>
       
+      {/* Desktop nav */}
       <div className="hidden md:flex gap-8 items-center">
         {links.map((link, i) => (
           link.external ? (
@@ -39,11 +46,50 @@ export default function Navbar({ locale }: NavbarProps) {
         <LanguageSwitcher locale={locale} />
       </div>
       
-      <button className="md:hidden text-white">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M3 12h18M3 6h18M3 18h18" />
-        </svg>
-      </button>
+      {/* Mobile: hamburger + language switcher */}
+      <div className="flex md:hidden items-center gap-3">
+        <LanguageSwitcher locale={locale} />
+        <button 
+          onClick={() => setMenuOpen(!menuOpen)} 
+          className="text-white p-1"
+          aria-label="Toggle menu"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            {menuOpen ? (
+              <>
+                <path d="M18 6L6 18" />
+                <path d="M6 6l12 12" />
+              </>
+            ) : (
+              <>
+                <path d="M3 12h18" />
+                <path d="M3 6h18" />
+                <path d="M3 18h18" />
+              </>
+            )}
+          </svg>
+        </button>
+      </div>
+      
+      {/* Mobile menu overlay */}
+      {menuOpen && (
+        <div className="absolute top-16 left-0 right-0 bg-[rgba(10,22,40,0.98)] backdrop-blur-[20px] border-b border-[rgba(78,205,196,0.1)] md:hidden px-4 py-6 flex flex-col gap-4 animate-in slide-in-from-top-2">
+          {links.map((link, i) => (
+            link.external ? (
+              <a key={i} href={link.href} target="_blank" rel="noopener noreferrer" className="text-[rgba(255,255,255,0.7)] no-underline text-[15px] font-medium hover:text-accent-teal transition-colors py-2">
+                {link.label}
+              </a>
+            ) : (
+              <a key={i} href={link.href} className="text-[rgba(255,255,255,0.7)] no-underline text-[15px] font-medium hover:text-accent-teal transition-colors py-2">
+                {link.label}
+              </a>
+            )
+          ))}
+          <a href={isEn ? "/contact" : "/de/contact"} className="bg-accent-teal text-primary-dark px-6 py-3 rounded-lg font-bold text-[13px] text-center mt-2">
+            {isEn ? "GET IN TOUCH" : "KONTAKT"}
+          </a>
+        </div>
+      )}
     </nav>
   );
 }
@@ -56,7 +102,7 @@ function LanguageSwitcher({ locale }: LanguageSwitcherProps) {
   const isEn = locale === "en";
   
   return (
-    <div className="flex gap-2 items-center">
+    <div className="flex gap-2 items-center shrink-0">
       <a href={isEn ? "/" : "/en"} className={`text-[13px] font-medium ${isEn ? "text-accent-teal" : "text-[rgba(255,255,255,0.5)]"}`}>🇬🇧 EN</a>
       <span className="text-[rgba(255,255,255,0.2)]">|</span>
       <a href={isEn ? "/de" : "/"} className={`text-[13px] font-medium ${!isEn ? "text-accent-teal" : "text-[rgba(255,255,255,0.5)]"}`}>🇩🇪 DE</a>
